@@ -5,7 +5,7 @@
 CKEDITOR.plugins.add('soft-hyphen-shortcut', {
 	init: function (editor) {
 		var softHyphenUnicodeChar = '\u00AD';
-		var softHyphenEntity = '&shy;';
+		var softHyphenEntity = '&#173;';  // '&shy;';
 
 		editor.addCommand('insertSoftHyphen', {
 			exec: function (editor, data) {
